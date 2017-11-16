@@ -1,0 +1,55 @@
+.header {
+  width: 100%;
+}
+
+
+// menu
+
+.navbar-custom {
+  background-color: rgb(255,255,255);
+  border-bottom: 1px solid rgb(245,245,245);
+  li .active,
+  li a:hover,
+  .navbar-nav > li.active a {
+    color: $accent;
+  }
+}
+
+.nav-link {
+  color: $default-color;
+}
+
+
+// logo
+.navbar-brand {
+  font-family: DancingScript;
+  color: $default-color;
+}
+
+
+// hamburger
+
+.navbar-toggler{
+  cursor: pointer;
+}
+
+.hamburger .line{
+  display: block;
+  width: 43px;
+  height: 2px;
+  margin: 8px auto;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger.is-active .line:nth-child(1){
+  transform: translateY(10px) rotate(45deg);
+}
+
+#hamburger.is-active .line:nth-child(3){
+  transform: translateY(-10px) rotate(-45deg);
+}
