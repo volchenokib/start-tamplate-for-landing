@@ -55,11 +55,9 @@ html, body {
 }
 
 body {
-  font-size: 16px;
   min-width: 320px;
   position: relative;
-  line-height: 1.65;
-  font-family: $default-font;
+  font: 300 16px/1.65 $default-font, sans-serif;
   color: $default-color;
   overflow-x: hidden;
   opacity: 1;
@@ -69,18 +67,24 @@ button:focus {
   outline: none;
 }
 
-//typography start
+//Typography start
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font: 40px/1.2 $default-font, sans-serif;
+  color: $default-color;
+  letter-spacing: 5px;
+
+}
 
 .h1 {
-  text-align: center;
   font-weight: bold;
 }
 
 .h2 {
-  font-family: $default-font;
+  font-size: 30px;
 }
 
-//typography end
+//Typography end
 
 
 .wrapper {
@@ -99,7 +103,7 @@ button:focus {
   height: 100%;
   min-height: 650px;
   width: 100%;
-  padding: 20px 0
+  padding: 20px;
 }
 
 
